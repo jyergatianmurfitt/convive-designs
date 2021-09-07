@@ -2,17 +2,18 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="styles.css">
     <title>Convive Designs</title>
   </head>
-  <body>
+  <body onload="animateHome();">
     <nav class="navBar">
       <div class="brand"><span class="interiors">Convive </span>Designs</div>
       <ul class="topNav" id="navbar-toggle">
         <li><a class="navAnchor" href="#">Home</a></li>
         <li><a class="navAnchor" href="#">Products</a></li>
-        <li><a class="navAnchor" href="#">About us</a></li>
-        <li><a class="navAnchor" href="#">Contact us</a></li>
+        <li><a class="navAnchor bottomNav" href="#">Contact us</a></li>
         <li class="dropdownLink"><a class="navA" onclick="toggleDropdown()" href="javascript:void(0)">&#9776;</a></li>
       </ul>
     </nav>
@@ -25,7 +26,7 @@
       </div>
     </header>
 
-    <section id="headshot">
+    <section class="scroll" id="headshot">
       <div class="headershot-wrapper">
         <img class="headshot" src="assets/profileimg.jpg" alt="headshot image">
         <h1>Harry Willis<br>MA Architecture</h1>
@@ -38,7 +39,7 @@
           <div class="icon-left">
             <img class="icon" src="assets/design.png" alt="building blocks">
           </div>
-          <div class="blurb-wrapper-right">
+          <div class="blurb-wrapper-right scroll">
             <h3 class="blurb-header">Design</h3>
             <div class="blurb-info">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate, tortor nec eleifend lacinia, arcu quam condimentum lectus, vitae molestie massa nulla ut mauris. Integer aliquam justo id nisi interdum, sit amet malesuada neque dictum. Etiam ut leo metus. Mauris volutpat finibus mauris, ut ultrices lectus consectetur et.
@@ -49,7 +50,7 @@
           <div class="icon-right">
             <img class="icon" src="assets/blocks.png" alt="building blocks">
           </div>
-          <div class="blurb-wrapper-left">
+          <div class="blurb-wrapper-left scroll">
             <h3 class="blurb-header">Resource</h3>
             <div class="blurb-info">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate, tortor nec eleifend lacinia, arcu quam condimentum lectus, vitae molestie massa nulla ut mauris. Integer aliquam justo id nisi interdum, sit amet malesuada neque dictum. Etiam ut leo metus. Mauris volutpat finibus mauris, ut ultrices lectus consectetur et.
@@ -60,7 +61,7 @@
           <div class="icon-left">
             <img class="icon" src="assets/house-plan.png" alt="building blocks">
           </div>
-          <div class="blurb-wrapper-right">
+          <div class="blurb-wrapper-right scroll">
             <h3 class="blurb-header">Create</h3>
             <div class="blurb-info">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate, tortor nec eleifend lacinia, arcu quam condimentum lectus, vitae molestie massa nulla ut mauris. Integer aliquam justo id nisi interdum, sit amet malesuada neque dictum. Etiam ut leo metus. Mauris volutpat finibus mauris, ut ultrices lectus consectetur et.
@@ -68,12 +69,12 @@
           </div>
         </div>
         <div class="quote-btn-wrapper">
-          <button class="quote-btn">Get a quote</button>
+          <button class="button quote-btn">Get a quote</button>
         </div>
       </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio scroll">
       <div class="container">
         <div class="section-header">
           <h1 class="header subheading">Previous Work</h1>
@@ -140,7 +141,7 @@
     </section>
 
     <section class="contact-container">
-      <div class="container">
+      <div class="container scroll">
         <div class="section-header">
           <h1 class="subheading">Drop us a line</h1>
         </div>
@@ -158,7 +159,7 @@
             <textarea class="form-control" rows="6" id="message"></textarea>
           </div>
           <div class="submit-btn-wrapper">
-            <button class="quote-btn">Submit</button>
+            <button class="button quote-btn">Submit</button>
           </div>
         </form>
       </div>
@@ -167,13 +168,13 @@
     <footer>
       <div class="container">
         <div class="bottomLogo">
-          <div class="brand"><span class="interiors">Four Oaks </span>Interiors</div>
+          <div class="brand"><span class="interiors">Convive </span>Designs</div>
         </div>
         <div class="contact">
-          <h3 class="contactInfo">harrywillis@fouroaks.com</h3>
+          <h3 class="button contactInfo">harrywillis@convive.com</h3>
           <h3 class="contactInfo">Phone: 02067 586 305</h3>
-          <h3 class="contactInfo">Instagram: @fouroaksinterioirs</h3>
-          <h3 class="contactInfo">Facebook: @fouroaksinterioirs</h3>
+          <h3 class="contactInfo">Instagram: @convivedesigns</h3>
+          <h3 class="contactInfo">Facebook: @convivedesigns</h3>
         </div>
       </div>
     </footer>

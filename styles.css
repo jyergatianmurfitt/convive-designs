@@ -9,6 +9,8 @@
 
 .header-container {
   background-image: url("assets/main-img.jpg");
+  opacity: .3;
+  transition: opacity 750ms ease-in-out;
   width: 100%;
   background-position: center center;
   height: 100vh;
@@ -19,6 +21,10 @@
   display: flex;
   justify-content: center;
   padding-top: 20%;
+}
+
+.button {
+  cursor: pointer;
 }
 
 button.main-btn {
@@ -38,13 +44,22 @@ a.main-btn-a {
   color: black;
 }
 
-.grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: scale(1.1); }
+.grow { transition: all 250ms ease-in-out; }
+.grow:hover { transform: scale(1.1);}
 
 .container {
   max-width: 1140px;
   width: 100%;
   margin: 0 auto;
+}
+
+.scroll {
+  margin-top: 10%;
+}
+
+.scrolled {
+  margin-top: 0px;
+  transition: all 750ms ease-in-out;
 }
 
 .brand {
@@ -74,7 +89,7 @@ a.main-btn-a {
 }
 
 .navAnchor:hover {
-  color: #5ca904;
+  color: #5e80b8;
 }
 
 a.navA {
@@ -300,6 +315,10 @@ form label {
   ul.topNav.responsive li a.navAnchor {
     display: block;
     line-height: 2;
+  }
+
+  ul.topNav.responsive li a.navAnchor.bottomNav {
+    padding-bottom: 30px;
   }
 
   ul.topNav.responsive li {
